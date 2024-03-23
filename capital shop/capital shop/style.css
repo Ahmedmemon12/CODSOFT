@@ -1,0 +1,1194 @@
+* {
+    font-family: "Jost", sans-serif;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* announcement bar section */
+.announceDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ADWrap{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #edeff2;
+    padding: 7px 0px;
+}
+.ADTxt {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.ADTxt>a {
+    font-size: 14px;
+    color: #292621;
+}
+
+.ADlink {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 380px;
+    padding-right: 100px;
+}
+
+.ADlink {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 380px;
+    padding-right: 100px;
+}
+
+.ADLtxt>a {
+    font-size: 14px;
+    color: #292621;
+}
+
+.ADLtxt {
+    border-right: 1px solid #edeff2;
+    width: 102px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ADLsocialLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+}
+
+.ADLsocialLink>a>i {
+    color: #635c5c;
+    font-size: 14px;
+    transition: .5s;
+}
+
+    .ADLsocialLink>a>i:hover {
+    color: red !important;
+    animation: flip-vertical-right .4s cubic-bezier(.455, .03, .515, .955) both;
+}
+
+@keyframes flip-vertical-right {
+    0% {
+        transform: rotateY(0)
+    }
+
+    100% {
+        transform: rotateY(180deg)
+    }
+}
+
+/* /announcement bar section */
+
+/* navbar section */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+
+.NavFix {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+    top: 0;
+    box-shadow: 0px 0px 20px #979797;
+}
+
+.logo {
+    width: 15vw;
+}
+
+.navLink {
+    width: 710px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.new {
+    position: relative;
+}
+
+.new::before {
+    position: absolute;
+    content: "New";
+    background: #FF2020;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 9px;
+    top: -16px;
+    right: 7px;
+    padding: 1px 4px;
+    letter-spacing: 1px;
+    z-index: 99;
+    font-weight: 500;
+}
+
+.fa-angle-down {
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 2px;
+}
+
+.new::after {
+    position: absolute;
+    height: 9px;
+    width: 6px;
+    background: #FF2020;
+    content: "";
+    right: 23px;
+    top: -8px;
+    -webkit-transform: rotate(56deg);
+    -ms-transform: rotate(56deg);
+    transform: rotate(56deg);
+}
+
+.navLink>div>a {
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.NavIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+}
+
+.NavIcon>a>i {
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.NavIcon>a>i:hover {
+    color: red;
+}
+
+/* /navbar section */
+.cart {
+    position: relative;
+}
+
+.cart>a>i {
+    color: #292621;
+    font-size: 24px;
+    transition: 0.2s;
+}
+
+.cart>a>i:hover {
+    color: red;
+}
+
+.cart::after {
+    transition: all .4s ease-out 0s;
+    position: absolute;
+    content: "1";
+    background: #FF2020;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    top: -15px;
+    right: -9px;
+    padding: 3px 9px;
+}
+
+.menu {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+    border-radius: 5px;
+    width: 90px;
+    background-color: #222;
+    color: white;
+}
+
+.page {
+    position: relative;
+}
+
+.space {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+}
+
+.dropper {
+    width: 150px;
+    display: none;
+    right: -120px;
+    top: 54px;
+    position: absolute;
+    box-shadow: 0px 4px 7px 0px rgba(90, 90, 90, 0.616);
+    border-radius: 5px;
+    border-top: 5px solid red;
+    padding: 30px 20px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 99;
+}
+
+.dropper>a {
+    margin: 10px 0px;
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+.dropper>a:hover {
+    color: red;
+}
+
+.dropper::after {
+    width: 6px;
+    content: '';
+    position: absolute;
+    background-color: #FF2020;
+    top: -9px;
+    left: 30px;
+    height: 8px;
+    transform: rotate(130deg);
+}
+
+.navLink>div>a:hover {
+    color: red;
+}
+
+.collapsedNav {
+    background-color: #4c4c4c;
+    width: 100%;
+    padding-top: 40px;
+    display: none;
+}
+
+.NavLinkOpt>a {
+    width: 90%;
+    color: white;
+    padding: 0px 20px;
+    font-size: 13px;
+}
+
+.NavLinkOpt {
+    height: 30px;
+    align-items: center;
+    display: flex;
+    padding: 3px 0px;
+    border-bottom: 1px;
+}
+
+.SaleBar {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.SaleBar>span>a {
+    color: #CEBD9C;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #CEBD9C;
+    transition: 0.5s;
+}
+
+.SaleBar>span>a:hover {
+    letter-spacing: 2px;
+}
+
+.Slider {
+    height: 700px;
+}
+
+.sliderContent {
+    height: 700px;
+    background-position: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.WomenSlider>.SCtxtCont {
+    justify-content: end;
+}
+
+.MenSlider>.SCtxtCont {
+    justify-content: start;
+}
+
+.SCtxtCont {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.SCTxt {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SCTxt>span {
+    color: #FF2020;
+    font-family: "Clicker Script", cursive;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.SCTxt>h1 {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 2px;
+    color: #292621;
+}
+.Slider > div > div > .slick-active>div>div>h1 {
+    animation: jello-horizontal 1s both;
+}
+
+.Slider > div > div > .slick-active>div>div>p {
+    animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.Slider > div > div > .slick-active>div>div>a {
+    animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.SCTxt>p {
+    color: #74706B;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 31px;
+    padding: 0 50px;
+    width: 470px;
+    text-align: center;
+}
+
+.SCTxt>a {
+    background-color: #292621;
+    border: 1px solid #292621;
+    padding: 15px 47px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.WomenSlider {
+    background-image: url('https://preview.colorlib.com/theme/capitalshop/assets/img/hero/h1_hero2.jpg.webp');
+}
+
+.MenSlider {
+    background-image: url('https://preview.colorlib.com/theme/capitalshop/assets/img/hero/h1_hero1.jpg.webp');
+}
+
+.slick-next {
+    right: 0px;
+}
+
+.slick-prev {
+    left: 0px;
+}
+
+.slick-arrow {
+    background: rgba(41, 38, 33, 0.2) !important;
+    z-index: 2;
+    height: 100px;
+    width: 50px;
+    transition: 0.5s;
+}
+
+.slick-arrow:hover {
+    background-color: #000 !important;
+}
+
+.slick-next::before {
+    font-size: 0px;
+    font-weight: 600;
+}
+
+.slick-prev::before {
+    font-size: 0px;
+    font-weight: 600;
+}
+
+.fa-angle-left:before {
+    font-size: 25px;
+    color: #fff;
+}
+
+.fa-angle-right:before {
+    font-size: 25px;
+    color: #fff;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 85%;
+    justify-content: space-around;
+}
+
+.Cardcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.Card {
+    width: 350px;
+    height: 310px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Card>span {
+    position: absolute;
+    bottom: 30px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    width: 350px;
+    text-align: center;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+.Card>img {
+    transition: 0.5s;
+}
+
+.Card>a {
+    position: absolute;
+    left: 150px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    color: #fff;
+    transition: 0.5s;
+    bottom: -30px;
+    z-index: 3;
+}
+
+.Card:hover>a {
+    bottom: 20px;
+}
+
+.Card:hover>span {
+    bottom: 80px;
+}
+
+.Card:hover>img {
+    transform: scale(1.1);
+}
+
+.Card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    bottom: 0;
+    height: 100px;
+    background: linear-gradient(#00000007, #000000d0);
+}
+
+.trendingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.TCheader {
+    display: flex;
+    width: 83%;
+    align-items: end;
+    justify-content: space-between;
+    border-bottom: #edeff2 1px solid;
+    margin: 0%;
+}
+
+.TCHeading>h2 {
+    font-size: 34px;
+    font-weight: 500;
+    color: #292621;
+}
+
+.TCFilter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filters {
+    padding: 36px 12px;
+    margin: 0px 7px;
+    transition: 0.2s;
+    font-weight: 600;
+    font-weight: 16px;
+    color: #292621;
+    cursor: pointer;
+}
+
+.filters:hover {
+    border-bottom: #FF2020 4px solid;
+}
+
+.filters-active {
+    color: #FF2020;
+    border-bottom: #FF2020 4px solid;
+}
+
+.TCcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.TCCImg {
+    width: 260px;
+    overflow: hidden;
+}
+
+.TCCImg>img {
+    transition: 0.4s;
+}
+
+.TCcard:hover .TCCImg>img {
+    transform: scale(1.1);
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+}
+
+.data>a {
+    color: #292621;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.data>span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #74706B;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.data>span>span {
+    text-decoration: line-through;
+    color: #CEBD9C;
+}
+
+.MSlider {
+    width: 80%;
+    display: flex;
+}
+
+.TCSlider {
+    display: flex;
+}
+
+.TCcard:hover .data>a {
+    color: #FF2020;
+}
+
+.TCcard:hover .data>span {
+    color: #000;
+}
+
+.TCcard:hover .TCAicons {
+    opacity: 1;
+}
+
+.MSlider .slick-prev {
+    left: -50px;
+}
+
+.MSlider .slick-next {
+    right: -50px;
+}
+
+.MSlider .slick-arrow {
+    background-color: transparent !important;
+}
+
+.MSlider>.slick-arrow>i::before {
+    color: rgba(32, 69, 112, 0.3);
+    font-size: 30px;
+}
+
+.HiderSlider {
+    display: none;
+}
+
+.TCAfter {
+    position: absolute;
+    bottom: 120px;
+}
+
+.TCAcontainer {
+    display: flex;
+}
+
+.TCAicons {
+    height: 50px;
+    width: 64px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.TCAicons:hover {
+    color: white;
+    background-color: red;
+}
+
+.gap {
+    width: 100%;
+    height: 100px;
+}
+
+.TSchild {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 926px;
+}
+
+.TSchild>h2 {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.TSchild>p {
+    padding: 0px 260px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.TestimonialContainer {
+    background-color: #F3EAD8;
+    padding: 60px 0px;
+}
+
+.testCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founderCont {
+    display: flex;
+    align-items: center;
+}
+
+.founderData {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.founderData>span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #292621;
+}
+
+.founderData>p {
+    font-size: 16px;
+    color: #74706B;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.testSlider {
+    width: 80%;
+}
+
+.testSlider>button {
+    background-color: transparent !important;
+}
+
+.testSlider>button:hover {
+    background-color: transparent !important;
+}
+
+.testSlider>button>i::before {
+    color: rgba(41, 38, 33, 0.3)
+}
+
+.founderImg {
+    width: 63px;
+    height: 63px;
+}
+
+.mSlider {
+    width: 80%;
+}
+
+.YMLContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 180px;
+}
+
+.mSlider>button {
+    background-color: transparent !important;
+}
+
+.mSlider>button:hover {
+    background-color: transparent !important;
+}
+
+.mSlider>button>i::before {
+    color: rgba(41, 38, 33, 0.3)
+}
+
+.mSlider>.slick-prev {
+    left: -60px;
+}
+
+.mSlider>.slick-next {
+    right: -60px;
+}
+
+.YMLContainer>div>h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #292621;
+}
+
+.LNContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.LNHead>h2 {
+    color: #292621;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.LNCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.LNCard {
+    width: 30%;
+    max-height: 460px;
+    margin: 0px 10px;
+}
+
+.LNCard:hover .LNCData>h5>a {
+    color: red;
+}
+
+.LNCData>span {
+    color: #74706B;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.LNCImg {
+    margin-bottom: 10px;
+}
+
+.LNCData>h5>a {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #292621;
+    transition: 0.2s;
+}
+
+.LNCData>p {
+    font-size: 15px;
+    color: #74706B;
+}
+
+.LNCData>a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+    transition: 0.7s;
+}
+
+.LNCData>a:hover {
+    letter-spacing: 0.4px;
+    font-size: 15.5px;
+}
+
+.LCContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.LCCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.LCCard {
+    margin: 20px;
+    position: relative;
+    border-right: 1px #edeff2 solid;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+.LCCIcon>i {
+    font-size: 43px;
+    color: #2b2b2b;
+}
+
+.LCCData {
+    text-align: center;
+}
+
+.LCCData>h2 {
+    font-size: 20px;
+    color: #2b2b2b;
+    font-weight: 500;
+}
+
+.LCCData>span {
+    font-size: 16px;
+    color: #57667e;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #171613;
+    color: white;
+    padding: 50px 0px;
+    padding-bottom: 0px !important;
+}
+
+.Subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.FSinput {
+    display: flex;
+    align-items: center;
+}
+
+.FSinput>input {
+    height: 58px;
+    width: 360px;
+    margin-right: 10px;
+    border-radius: 0px;
+    border: 0px;
+    background-color: white;
+    padding-left: 30px;
+}
+
+.FSBtn {
+    height: 60px;
+    width: 126px;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    display: flex;
+    color: white;
+    font-weight: 500;
+}
+
+.social {
+    display: flex;
+    align-items: start;
+    height: 60px;
+    justify-content: center;
+}
+
+.social>.ADLsocialLink {
+    width: 50px !important;
+}
+
+.social>.ADLsocialLink>a>i {
+    font-size: 24px;
+    color: #677F8B;
+}
+
+.Subscribe .text>h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.Subscribe .text>span {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    font-weight: 400;
+}
+
+.FootNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 50px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.FNlogo {
+    width: 200px;
+    display: flex;
+    align-items: start;
+    height: 230px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 170px;
+    width: 150px;
+
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    color: #BBB9B5;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+li:hover>a {
+    letter-spacing: 0.5px;
+    text-decoration: underline;
+}
+
+.MenNav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CopyRight>p {
+    color: #BBB9B5;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.CopyRight {
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1440px) {
+    .ADlink{
+        padding-right: 70px;
+    }
+    nav{
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .logo>img {
+        width: 200px;
+    }
+
+    .navLink {
+        width: 557px;
+        padding-left: 60px;
+    }
+
+    .navLink>div>a {
+        font-size: 16px;
+    }
+
+    .ADTxt {
+        padding-left: 50px;
+    }
+
+    .ADlink {
+        padding-right: 35px;
+    }
+    .ADLsocialLink{
+        width: 160px;
+    }
+    .ADlink{
+        width: 390px;
+    }
+    .ADTxt{
+        padding-left: 50px;
+    }
+    .ADWrap{
+        width: 100%;
+    }
+    .NavIcon{
+        width: 200px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navLink {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 10px 20px 0px 20px;
+        align-items: end;
+        height: 50px;
+    }
+
+    .collapsedNavShow {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        align-items: end;
+    }
+
+    .NavIcon {
+        height: 43px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .SaleBar {
+        display: none;
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes slide-in-bottom {
+    0% {
+      transform: translateY(400px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

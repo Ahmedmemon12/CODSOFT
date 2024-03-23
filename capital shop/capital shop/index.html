@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | eCommerce</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./Screenshot_2024-03-15_104447-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- 1.annuncement bar -->
+    <div class="announceDiv">
+        <div class="ADWrap">
+            <div class="ADTxt">
+                <a href="#">About Us</a>
+                <a href="#">Privacy</a>
+                <a href="#">FAQ</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="ADlink">
+                <div class="ADLtxt">
+                    <a href="#">My Wishlist</a>
+                </div>
+                <div class="ADLtxt">
+                    <a href="#">Track Your Order</a>
+                </div>
+                <div class="ADLsocialLink">
+                    <a href="#" class="ADLsocial">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#" class="ADLsocial">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="ADLsocial">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="ADLsocial">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="ADLsocial">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /1.annuncement bar -->
+    <!-- 2.Navbar -->
+    <nav id="Navbar">
+        <a href="#" class="logo">
+            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/logo/logo.png" alt="">
+        </a>
+        <div class="navLink">
+            <div class="navItem"><a href="#">Home</a></div>
+            <div class="navItem"> <a href="#">Men</a></div>
+            <div class="navItem"><a href="#">Women</a></div>
+            <div class="navItem new"><a href="#">Baby Collection</a></div>
+            <div class="navItem page" id="pageLink"><a href="#">Pages<i class="fas fa-angle-down"></i></a>
+                <div class="space"></div>
+                <div class="dropper" id="pageDrop">
+                    <a href="#">Login</a>
+                    <a href="#">Card</a>
+                    <a href="#">Product Details</a>
+                    <a href="#">Product Checkout</a>
+                </div>
+            </div>
+            <div class="navItem page" id="BLogLink"><a href="#">Blog</a>
+                <div class="space"></div>
+                <div class="dropper" id="blogDrop">
+                    <a href="#">Blog</a>
+                    <a href="#">Element</a>
+                    <a href="#">Blog Details</a>
+                </div>
+            </div>
+            <div class="navItem"><a href="#">Contact</a></div>
+        </div>
+        <div class="NavIcon">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <div class="cart">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <a id="menuBtn" class="menu" href="#">
+                <span>Menu</span>
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <div id="navCollapser" class="collapsedNav">
+        <div class="NavLinkOpt">
+            <a href="#">Home</a>
+        </div>
+        <div class="NavLinkOpt">
+            <a href="#">Men</a>
+        </div>
+        <div class="NavLinkOpt">
+            <a href="#">Women</a>
+        </div>
+        <div class="NavLinkOpt">
+            <a href="#">Baby Collection</a>
+        </div>
+        <div class="NavLinkOpt">
+            <a href="#">Pages <i class="fas fa-angle-down"></i> +</a>
+        </div>
+        <div class="NavLinkOpt">
+            <a href="#">Blog +</a>
+        </div>
+        <div class="NavLinkOpt">
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <!-- /2.Navbar -->
+    <div class="SaleBar">
+        <span>Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer <a href="#">Shop Now</a></span>
+    </div>
+    <!-- /Header -->
+    <!-- Slider -->
+    <div class="Slider">
+        <div class="sliderContent WomenSlider">
+            <div class="SCtxtCont">
+                <div class="SCTxt">
+                    <span>Fashion Sale</span>
+                    <h1>Minimal Menz Style</h1>
+                    <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus
+                        dignissimos facilis neque nulla earum.</p>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="sliderContent MenSlider">
+            <div class="SCtxtCont">
+                <div class="SCTxt">
+                    <span>Fashion Sale</span>
+                    <h1>Minimal Menz Style</h1>
+                    <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus
+                        dignissimos facilis neque nulla earum.</p>
+                    <a href="#">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Slider -->
+    <!-- Card -->
+    <div class="Cardcontainer">
+        <div class="cards">
+            <div class="Card MenCard">
+                <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items1.jpg" height="310px"
+                    alt="">
+                <span>Men's Fashion</span>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="Card WomenCard">
+                <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items2.jpg" height="310px"
+                    alt="">
+                <span>Women's Fashion</span>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="Card BabyCard">
+                <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items3.jpg" height="310px"
+                    alt="">
+                <span>Baby Fashion</span>
+                <a href="#">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- /Card -->
+    <!-- Trending -->
+    <div class="trendingContainer">
+        <div class="TCheader">
+            <div class="TCHeading">
+                <h2>Trending This Week</h2>
+            </div>
+            <div class="TCFilter">
+                <div class="filters MFilter filters-active"><span>Men</span></div>
+                <div class="filters WFilter"><span>Women</span></div>
+                <div class="filters BFilter"><span>Baby</span></div>
+                <div class="filters FFilter"><span>Fashion</span></div>
+            </div>
+        </div>
+        <div id="MSlider" class="MSlider">
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest2.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons i"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest1.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest2.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest3.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="WSlider" class="MSlider">
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest2.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest1.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest2.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest3.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="BSlider" class="MSlider">
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest2.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest1.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest2.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest3.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="FSlider" class="MSlider">
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest2.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest1.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest2.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest4.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest3.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gap"></div>
+    <!-- /Trending -->
+    <!-- Testimonial -->
+    <div class="TestimonialContainer">
+        <div class="testCont">
+            <div class="testSlider">
+                <div class="TSchild">
+                    <h2>Customer Testimonial</h2>
+                    <p>Everybody is different, which is why we offer styles for every body. Laborum fuga incidunt
+                        laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+                    <div class="founderCont">
+                        <div class="founderImg">
+                            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/founder-img.png"
+                                width="100%" alt="">
+                        </div>
+                        <div class="founderData">
+                            <span>Petey Cruiser</span>
+                            <p>Designer at Colorlib</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="TSchild">
+                    <h2>Customer Testimonial</h2>
+                    <p>Everybody is different, which is why we offer styles for every body. Laborum fuga incidunt
+                        laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+                    <div class="founderCont">
+                        <div class="founderImg">
+                            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/founder-img.png"
+                                width="100%" alt="">
+                        </div>
+                        <div class="founderData">
+                            <span>Petey Cruiser</span>
+                            <p>Designer at Colorlib</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="TSchild">
+                    <h2>Customer Testimonial</h2>
+                    <p>Everybody is different, which is why we offer styles for every body. Laborum fuga incidunt
+                        laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+                    <div class="founderCont">
+                        <div class="founderImg">
+                            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/founder-img.png"
+                                width="100%" alt="">
+                        </div>
+                        <div class="founderData">
+                            <span>Petey Cruiser</span>
+                            <p>Designer at Colorlib</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="TSchild">
+                    <h2>Customer Testimonial</h2>
+                    <p>Everybody is different, which is why we offer styles for every body. Laborum fuga incidunt
+                        laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+                    <div class="founderCont">
+                        <div class="founderImg">
+                            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/founder-img.png"
+                                width="100%" alt="">
+                        </div>
+                        <div class="founderData">
+                            <span>Petey Cruiser</span>
+                            <p>Designer at Colorlib</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="TSchild">
+                    <h2>Customer Testimonial</h2>
+                    <p>Everybody is different, which is why we offer styles for every body. Laborum fuga incidunt
+                        laboriosam voluptas iure, delectus dignissimos facilis neque nulla earum.</p>
+                    <div class="founderCont">
+                        <div class="founderImg">
+                            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/founder-img.png"
+                                width="100%" alt="">
+                        </div>
+                        <div class="founderData">
+                            <span>Petey Cruiser</span>
+                            <p>Designer at Colorlib</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Testimonial -->
+    <!-- You May Like -->
+    <div class="YMLContainer">
+        <div class="YMLHead">
+            <h2>You May Like</h2>
+        </div>
+        <div id="MSlider" class="mSlider">
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest5.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons i"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest6.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest7.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest8.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest6.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="TCSlider">
+                <div class="TCcard">
+                    <div class="TCCImg">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/latest7.jpg" alt="">
+                    </div>
+                    <div class="data">
+                        <a href="#">Cashmere Tank + Bag</a>
+                        <span>$98.00 <span>$120.00</span></span>
+                    </div>
+                    <div class="TCAfter">
+                        <div class="TCAcontainer">
+                            <div class="TCAicons iconI"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                            <div class="TCAicons iconII"><i class="fa-regular fa-heart"></i></div>
+                            <div class="TCAicons iconIII"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /You May Like -->
+    <!-- Latest News -->
+    <div class="LNContainer">
+        <div class="LNHead">
+            <h2>Latest News</h2>
+        </div>
+        <div class="LNCards">
+            <div class="LNCard">
+                <div class="LNCImg">
+                    <a href="#">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/blog1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="LNCData">
+                    <span>Fashion Tips</span>
+                    <h5>
+                        <a href="#">What Curling Irons Are The Best Ones</a>
+                    </h5>
+                    <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus..</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="LNCard">
+                <div class="LNCImg">
+                    <a href="#">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/blog2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="LNCData">
+                    <span>Fashion Tips</span>
+                    <h5>
+                        <a href="#">Vogue's Ultimate Guide To Autumn/
+                            Winter 2019 Shoes</a>
+                    </h5>
+                    <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus..</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="LNCard">
+                <div class="LNCImg">
+                    <a href="#">
+                        <img width="100%"
+                            src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/blog3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="LNCData">
+                    <span>Fashion Tips</span>
+                    <h5>
+                        <a href="#">What Curling Irons Are The Best Ones</a>
+                    </h5>
+                    <p>Consectetur adipisicing elit. Laborum fuga incidunt laboriosam voluptas iure, delectus..</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Latest News -->
+    <!-- Last Cards -->
+    <div class="LCContainer">
+        <div class="LCCards">
+            <div class="LCCard">
+                <div class="LCCIcon">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="LCCData">
+                    <h2>Fast & Free Delivery</h2>
+                    <span>Free delivery on all orders</span>
+                </div>
+            </div>
+            <div class="LCCard">
+                <div class="LCCIcon">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="LCCData">
+                    <h2>Fast & Free Delivery</h2>
+                    <span>Free delivery on all orders</span>
+                </div>
+            </div>
+            <div class="LCCard">
+                <div class="LCCIcon">
+                    <i class="fa-solid fa-money-bill"></i>
+                </div>
+                <div class="LCCData">
+                    <h2>Fast & Free Delivery</h2>
+                    <span>Free delivery on all orders</span>
+                </div>
+            </div>
+            <div class="LCCard">
+                <div class="LCCIcon">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="LCCData">
+                    <h2>Fast & Free Delivery</h2>
+                    <span>Free delivery on all orders</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Last Cards -->
+    <!-- Footer -->
+    <footer>
+        <div class="Subscribe">
+            <div class="text">
+                <h3>Subscribe Newsletter</h3>
+                <span>Subscribe newsletter to get 5% on all products.</span>
+            </div>
+            <div class="FSinput">
+                <input placeholder="Enter your email" type="text">
+                <div class="FSBtn">
+                    Subscribe
+                </div>
+            </div>
+            <div class="social">
+                <div class="ADLsocialLink">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="ADLsocialLink">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="ADLsocialLink">
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="FootNav">
+            <div class="FNlogo">
+                <a href="#">
+                    <img width="100%"
+                        src="https://preview.colorlib.com/theme/capitalshop/assets/img/logo/logo2_footer.png" alt="">
+                </a>
+            </div>
+            <div class="MenNav">
+                <h4>Shop Men</h4>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>
+            </div>
+            <div class="MenNav">
+                <h4>Shop Women</h4>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>
+            </div>
+            <div class="MenNav">
+                <h4>Baby Collection</h4>
+                <ul>
+                    <li><a href="#">Clothing Fashion</a></li>
+                    <li><a href="#">Winter</a></li>
+                    <li><a href="#">Summer</a></li>
+                    <li><a href="#">Formal</a></li>
+                    <li><a href="#">Casual</a></li>
+                </ul>
+            </div>
+            <div class="MenNav">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Track Your Order</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Carrier</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="CopyRight">
+            <p>
+                Copyright © 2024 All rights reserved | This template is made with
+                <i class="fa fa-heart" style="color: red;" aria-hidden="true"></i>
+                by
+                <a style="color: rgba(255, 0, 0, 0.76);" href="#">Ahmed Memon</a>
+            </p>
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="script.js"></script>
+</body>
+
+</html>

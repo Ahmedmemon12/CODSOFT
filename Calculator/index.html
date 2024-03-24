@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="icon" href="download (1).png" type="image/png">
+</head>
+<body>
+    <div class="main">
+        <div class="screen"><span id="display" class="value">0</span></div>
+        <div class="button">
+        <div class="firstR">
+            <button onclick="clearDisplay()"  class="btn C">C</button>
+            <button id="mrc"  class="btn">MRC</button>
+            <button id="mplus" class="btn">M+</button>
+            <button id="mminus" class="btn">M-</button>
+        </div>
+        <div class="firstR">
+            <button onclick="appendtodisplay('7')" class="btn num">7</button>
+            <button onclick="appendtodisplay('8')" class="btn num">8</button>
+            <button onclick="appendtodisplay('9')" class="btn num">9</button>
+            <button onclick="appendtodisplay('/')" class="btn">÷</button>
+        </div>
+        <div class="firstR">
+            <button onclick="appendtodisplay('4')"  class="btn num">4</button>
+            <button onclick="appendtodisplay('5')"  class="btn num">5</button>
+            <button onclick="appendtodisplay('6')" class="btn num">6</button>
+            <button onclick="appendtodisplay('*')" class="btn">×</button>
+        </div>
+        <div class="firstR">
+            <button onclick="appendtodisplay('1')"  class="btn num">1</button>
+            <button onclick="appendtodisplay('2')"  class="btn num">2</button>
+            <button onclick="appendtodisplay('3')" class="btn num">3</button>
+            <button onclick="appendtodisplay('-')" class="btn">-</button>
+        </div>
+        <div class="firstR">
+            <button onclick="appendtodisplay('0')"  class="btn num">0</button>
+            <button onclick="appendtodisplay('.')"  class="btn num">.</button>
+            <button onclick="calculateResult()" class="btn iet">=</button>
+            <button onclick="appendtodisplay('+')" class="btn">+</button>
+        </div>
+    </div>
+    </div>
+<script src="calculator.js"></script>
+</body>
+</html>
